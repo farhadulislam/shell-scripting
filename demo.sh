@@ -8,10 +8,10 @@ echo "Input provided is $input"
 
 read -p "Enter a number: " number;
 
-if [ $number -ge 16];
+if [ $number -ge 16 ];
 then
    echo "OK"
-elif [$number -le 15];
+elif [$number -le 15 ];
 then
    echo "Wait, one more year"
 else
@@ -20,8 +20,9 @@ fi
 
 
 # create a file and show its contents
-touch sampleFile.txt && "This is a sample file" >> sampleFile.txt && cat sampleFile
-rm sampleFile
+touch sampleFile.txt &&  echo "This is a sample file" >> sampleFile.txt 
+cat sampleFile.txt
+rm sampleFile.txt
 
 # create a dir if it doesn't exist
 [ -d sampleDir ] || mkdir sampleDir
@@ -52,17 +53,22 @@ num4=37
 sum=$(getSum num3 num4)
 echo $sum
 
+
+#### STRINGS #####
+echo "STARTING STRING DEMO"
+sleep 2
 str1=""
 str2="Monday"
 str3="Tuesday"
 
-if [$str2]; then
+if [ $str2 ]; then
    echo "$str2 is not empty"
 fi
 
-if [-z $str1]; then
+if [ -z $str1 ]; then
   echo "$str1 has no value"
 fi
+
 
 
 

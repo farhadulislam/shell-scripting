@@ -51,3 +51,18 @@ num3=35
 num4=37
 sum=$(getSum num3 num4)
 echo $sum
+
+str1=""
+str2="Monday"
+str3="Tuesday"
+
+if [$str2]; then
+   echo "$str2 is not empty"
+fi
+
+if [-z $str1]; then
+  echo "$str1 has no value"
+fi
+
+
+

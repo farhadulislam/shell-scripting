@@ -70,5 +70,13 @@ if [ -z $str1 ]; then
 fi
 
 
+# create files using seq and args
+seq 10 | xargs -I {} touch {}.txt
+
+#Renaming bunch of files
+ls | cut -d. -f1 | xargs -I {}  mv {}.txt {}.text
+
+
+
 
 

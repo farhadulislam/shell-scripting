@@ -73,6 +73,11 @@ fi
 # create files using seq and args
 seq 10 | xargs -I {} touch {}.txt
 
+#create files using seq and touch
+touch $(seq -f "file-%g.txt" 1 10)
+touch $(seq -f "dummy-%02g.txt" 1 20)
+
+
 #Renaming bunch of files
 ls | cut -d. -f1 | xargs -I {}  mv {}.txt {}.text
 

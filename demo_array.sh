@@ -19,3 +19,18 @@ done
 for i in ${!myArray[@]}; do
     echo "element $i is ${myArray[$i]}"
 done
+
+
+declare -a secondArray # 
+secondArray=('Abu Dhabi' 'Dubai' 'Sharjah')
+
+declare -A thirdArray # associated array
+thirdArray=([city1]='Tokyo' [city2]='Hong Kong' [city3]='Kualalumpur')
+
+echo "${secondArray[@]}"
+echo "${secondArray[*]}"
+#echo "${!thirdArray[*]"
+
+for i in ${!thirdArray[@]}; do
+    echo "element $i is ${thirdArray[$i]}"
+done

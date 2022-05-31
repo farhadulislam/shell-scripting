@@ -35,6 +35,3 @@ echo " "
 echo "#You can run the following if you wish to rename files"
 echo "ls | cut -d. -f1 | xargs -I {}  mv {}.txt {}.text"
 echo "***************END*******************************"
-
-
-

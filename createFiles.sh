@@ -4,9 +4,16 @@
 
 
 echo " "
-echo "PROVIDE TWO ARGS, FIRST for file ext such as txt, pdf, csv and SECOND for number of files you wish to create"
+echo "PROVIDE THREE ARGS, FIRST for file ext such as txt, pdf, csv and SECOND for number of files you wish to create"
 echo " "
 sleep 2
+
+for x in $1 $2 $3
+do  
+    #if [ ! -z "$x" ];then 
+    echo "RECEIVED THREE ARGS : $x" 
+    
+done
 
 
 #Deafult values

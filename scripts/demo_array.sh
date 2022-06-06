@@ -1,5 +1,19 @@
 #! /bin/bash
 
+#define a function that loops over each array element and displays
+
+function show_array_elements(){
+
+    echo "Function show_array_elements called"
+    echo
+    sleep 1
+    for i in ${!array[@]}; do
+    echo "element $i is ${array[$i]}"
+done
+}
+
+#demo exmaples below
+
 myArray=("Apple", "Banana", "Cat", "Dog")
 
 for i in ${myArray[@]}; do
@@ -34,3 +48,20 @@ echo "${secondArray[*]}"
 for i in ${!thirdArray[@]}; do
     echo "element $i is ${thirdArray[$i]}"
 done
+
+sleep 1
+echo
+
+
+
+#######################EXAMPLES################################################
+echo "One more associative array"
+echo 
+sleep 1
+
+declare -a associativeArray=([dist1]='Chittagon', [dist2]='Comilla', [dist3]='Faridpur')
+
+echo "${associativeArray[@]}"
+echo "${associativeArray[*]}"
+
+show_array_elements $associativeArray

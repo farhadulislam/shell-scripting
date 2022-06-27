@@ -26,7 +26,7 @@ case $DISTRICT in
     ;;
 
   *)
-    echo -ne "\nSorry, not known $*"
+    printf "\n Sorry, not known $*"
     ;;
 esac
 }

@@ -10,3 +10,6 @@ for row in 1 2 3 4 5
             echo $row $col
         done 
     done
+
+
+seq 1 100

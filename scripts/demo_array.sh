@@ -65,10 +65,3 @@ echo "${associativeArray[@]}"
 echo "${associativeArray[*]}"
 
 show_array_elements $associativeArray
-
-
-## more ARRAY examples
-
-NUMBERS=(1, 2, 3, four, 5, 6, 7, "This is eight")
-echo $NUMBERS
-echo ${NUMBERS[@]}

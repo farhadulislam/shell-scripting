@@ -16,6 +16,8 @@ function demo_local_vars(){
     local number2=40
 
     echo "Local vars : number1 $number1 number2 $number2"
+    addition=`expr $number1 + $number2`
+    printf "The addition is : $addition"
 }
 
 echo "Global vars : number1 $number1 number2 $number2"

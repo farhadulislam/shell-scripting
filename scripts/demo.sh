@@ -82,6 +82,11 @@ touch $(seq -f "dummy-%02g.txt" 1 20)
 ls | cut -d. -f1 | xargs -I {}  mv {}.txt {}.text
 
 
+echo "Enter name"
+read name
+printf "$name"
+
+
 
 
 

@@ -70,6 +70,9 @@ if [ -z $str1 ]; then
 fi
 
 
+([ -d TEMP_DIR ] || mkdir TEMP_DIR) && cd TEMP_DIR
+
+
 # create files using seq and args
 seq 10 | xargs -I {} touch {}.txt
 
@@ -82,9 +85,20 @@ touch $(seq -f "dummy-%02g.txt" 1 20)
 ls | cut -d. -f1 | xargs -I {}  mv {}.txt {}.text
 
 
-echo "Enter name"
-read name
-printf "$name"
+
+# will show lines that start with 'a'
+grep ^a regex.txt
+#will show line that ends with "ll"
+grep ll$ regex.txt
+
+# we could also search for words that has at least 5 characters and ends in ll
+grep ...ll$ regex.txt
+
+# word that has two consecutive letters 'p'. Curly braces escaped by \
+grep -E p\{2\} regex.txt
+
+
+
 
 
 

@@ -4,7 +4,6 @@
 
 function say_hello(){
     echo "This is demo function"
-    printf "This is a formatted %s \n" "text"
 }
 
 number1=10
@@ -16,8 +15,6 @@ function demo_local_vars(){
     local number2=40
 
     echo "Local vars : number1 $number1 number2 $number2"
-    addition=`expr $number1 + $number2`
-    printf "The addition is : $addition"
 }
 
 echo "Global vars : number1 $number1 number2 $number2"
@@ -27,4 +24,4 @@ function main (){
     demo_local_vars
 }
 
-main 
+main

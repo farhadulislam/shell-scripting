@@ -4,7 +4,6 @@
 
 function say_hello(){
     echo "This is demo function"
-    printf "This is a formatted %s \n" "text"
 }
 
 number1=10
@@ -25,4 +24,4 @@ function main (){
     demo_local_vars
 }
 
-main 
+main

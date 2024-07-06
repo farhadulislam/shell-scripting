@@ -11,5 +11,7 @@ if [[ $date =~$pattern ]]; then
 else
    echo "$date is not valid"
 fi
+DATE=`date`;
+echo $DATE;
 
 

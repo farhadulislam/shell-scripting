@@ -39,7 +39,7 @@ git remote -v
 
 #git branch
 
-git branch -r
-git branch -a
-git branch -vva
-git branch -vv
+git branch -r;
+git branch -a;
+git branch -vva;
+git branch -vv;

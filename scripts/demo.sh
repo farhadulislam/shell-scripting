@@ -66,11 +66,11 @@ if [ $str2 ]; then
 fi
 
 if [ -z $str1 ]; then
-  echo "$str1 has no value"
+   echo "$str1 has no value"
 fi
 
-
-([ -d TEMP_DIR ] || mkdir TEMP_DIR) && cd TEMP_DIR
+printf "Creating a TEMP_DIR \n"
+([ -d TEMP_DIR ] || mkdir TEMP_DIR) && cd TEMP_DIR;
 
 
 # create files using seq and args
